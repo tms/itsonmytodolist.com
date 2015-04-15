@@ -1,0 +1,32 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "It's on my todo list",
+    "owner": "Tim Stone",
+    "description": "Rambling accounts of stuff I've hopefully gotten around to doing",
+    "date_format": "YYYY-MM-DD"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "./plugins/prismjs.coffee",
+    "wintersmith-stylus"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "prism": {
+    "languages": ["java", "coffeescript", "csharp", "r", "sql", "bash"]
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
